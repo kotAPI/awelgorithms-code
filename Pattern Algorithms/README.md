@@ -1,6 +1,6 @@
 # General Algorithm Challenges
 
-### Challenge 1
+### 01_PatternChallenge
 
     0 1 2 3 4 5 6 7 8 9
     0 1 2 3 4 5 6 7 8 9
@@ -13,7 +13,7 @@
     0 1 2 3 4 5 6 7 8 9
     0 1 2 3 4 5 6 7 8 9
 
-### Challenge 2
+### 02_PatternChallenge
 
     0 0 0 0 0 0 0 0 0 0
     1 1 1 1 1 1 1 1 1 1
@@ -26,7 +26,7 @@
     8 8 8 8 8 8 8 8 8 8
     9 9 9 9 9 9 9 9 9 9
 
-### Challenge 3
+### 03_PatternChallenge
 
 	0 
 	0 1
@@ -39,7 +39,7 @@
 	0 1 2 3 4 5 6 7 8
 	0 1 2 3 4 5 6 7 8 9
 	
-### Challenge 4
+### 04_PatternChallenge
 
 
 	0 1 2 3 4 5 6 7 8 9
@@ -53,7 +53,7 @@
 	0 1
 	0
 
-### Challenge 5
+### 05_PatternChallenge
 
 	1
 	2 1
@@ -61,7 +61,7 @@
 	4 3 2 1
 	5 4 3 2 1
 
-### Challenge 6
+### 06_PatternChallenge
   
   	    numberOfLines = 4
 
@@ -71,20 +71,20 @@
 	  ******* 
 
 
-### Challenge 7
+### 07_PatternChallenge
 
 	1 2 3 4 5  6  7  8  9
 	2 4 6 8 10 12 14 16 18
 	3 6 9 12 15 18 21 24 27
-	.
-	.
-	.
-	.
-	.
+	4 8 12 16 20 24 28 32 36 
+	5 10 15 20 25 30 35 40 45 
+	6 12 18 24 30 36 42 48 54 
+	7 14 21 28 35 42 49 56 63 
+	8 16 24 32 40 48 56 64 72 
 	9 18 27 36 45 54 63 72 81
 
 
-### Challenge 8
+### 08_PatternChallenge
 
 	0 1 2  3 4 5  6  7  8  9
 	0 2 4  6 8 10 12 14 16 18
@@ -96,7 +96,7 @@
 	0 8 16
 	0 9 18 27 36 45 54 63 72 81
 
-### Challenge 9
+### 09_PatternChallenge
 
 	                1
 	              1 2 1
@@ -108,7 +108,7 @@
 	  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
 	1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
 
-### Challenge 10
+### 10_PatternChallenge
 
 	1 
 	1 2 
@@ -120,7 +120,7 @@
 	1 2
 	1
 	
-### Challenge 11
+### 11_PatternChallenge
 
 	1 2 3 4 5 6 7 8 9
 	  1 2 3 4 5 6 7 
@@ -128,7 +128,7 @@
 	      1 2 3 
 	        1
 
-### Challenge 12
+### 12_PatternChallenge
 
 	        1
 	      1 2
@@ -140,7 +140,7 @@
 	      1 2
 	        1
 
-### Challenge 13
+### 13_PatternChallenge
 
 	
 	                1
@@ -153,7 +153,7 @@
 	  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
 	1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
 
-### Challenge 14
+### 14_PatternChallenge
 
 	
 	                1
@@ -175,7 +175,7 @@
 	                1 2
 	                  1
 
-### Challenge 15
+### 15_PatternChallenge
 
 
 	
@@ -198,7 +198,7 @@
 	                1 2 1
 	                  1
 
-### Challenge 16
+### 16_PatternChallenge
 
 	1 2 3 4 5 5 4 3 2 1
 	1 2 3 4 4 3 2 1
@@ -212,7 +212,7 @@
 	1 2 3 4 5 5 4 3 2 1
 
 
-### Challenge 17
+### 17_PatternChallenge
 
 	p
 	pr
@@ -228,7 +228,8 @@
 	pr
 	p
 
-### Challenge 18 (Chessboard with varying width and height)
+### 18_PatternChallenge
+(Chessboard with varying width and height)
 
 	# # # #
 	 # # # #
@@ -240,7 +241,7 @@
 	 # # # #
 
 
-### Challenge 19
+### 19_PatternChallenge
 
     * * * * * * * * * *
     *
