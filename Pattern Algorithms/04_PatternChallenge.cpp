@@ -12,46 +12,49 @@
 /******************************************************************************************************/
 
 /***********************************
-/* 02_PatternChallenge
+/* 04_PatternChallenge
 /***********************************/
 
+// Library imports
 #include <iostream>
 using namespace std;
 
 //Prototypes for the algorithms
-void printPattern_02(int);
+void printPattern_04(int);
 
 int main(){
-	// Lines for I/O for the user input 
+	// user input
 	int userInput;
-	cout<<"Enter the number of lines"<<endl;
+
+	cout<<"Enter number of lines."<<endl;
 	cin>>userInput;
 
-	//Calling the algorithm functions
-	printPattern_02(userInput);
-
+	printPattern_04(userInput);
 	return 0;
 }
 
 /**********************************************************
-/*                <printPattern_02>
+/*                <some_function_name>
 /*
-/* @description : Loops to print nxn pattern of incrementing numbers.. 0-n forming an nxn grid
-/* @param       : Integer<input>, 'input' represents the n value in nxn grid.
+/* @description : Prints a pyramid pattern of decreasing digits, in sequential digits of input n.
+/* @param       : Integer<input>
 /* @return      : None, void
-/* @complexity  : 0(n^2)
-/* @explanation : A straight forward 0(n^2) approach to print the numbers in an nxn grid.
-/*  			  since the digits value represent the line number, we print the outer-loop value
-/*                'i' in this case over 'input' times, which is iterated and taken care of by the
-/*                inner loop 'j' in this case.
+/* @complexity  : O(n^2)
+/* @explanation : Algorithm that decrements the digits printed with every iteration in every line in
+/*                in a reverse pyramid fashion (Opposite to 03_PatternChallenge.cpp algorithm). Outer loop 
+/*                loops input number of times in decremental fashion, inner loop loops j<i number of times.
+/*                This would mean, the number of digits printed in every line with each loop decreases by 1.
+/*                Giving us the reverse pyramid as the challenge described.
 /* @author      : Pranay Kothapalli @kotAPI
 /**********************************************************/
-void printPattern_02(int input){
-	for(int i=0;i<input;i++){
-		for(int j=0;j<input;j++){
-			cout<<i<<" ";
+void printPattern_04(int input){
+	// Outer loop loops input number of times
+	for(int i=input;i>0;i--){
+		// Inner loop loops i number of times.
+		for(int j=0;j<i;j++){
+			cout<<j<<" ";
 		}
-		// Newline on end of inner loop to start printing on a fresh line.
+		// Jump to newline when the inner loop has finished executing.
 		cout<<endl;
 	}
 }
