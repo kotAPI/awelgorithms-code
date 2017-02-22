@@ -12,7 +12,7 @@
 /******************************************************************************************************/
 
 /***********************************
-/* 02_PatternChallenge
+/* 06_PatternChallenge
 /***********************************/
 
 // Library imports
@@ -20,39 +20,49 @@
 using namespace std;
 
 //Prototypes for the algorithms
-void printPattern_02(int);
+void printPattern_06(int);
 
 int main(){
-	// Lines for I/O for the user input 
+	// user input
 	int userInput;
-	cout<<"Enter the number of lines"<<endl;
+
+	cout<<"Enter number of lines."<<endl;
 	cin>>userInput;
 
-	//Calling the algorithm functions
-	printPattern_02(userInput);
-
+	printPattern_06(userInput);
 	return 0;
 }
 
 /**********************************************************
-/*                <printPattern_02>
+/*                <printPattern_06>
 /*
-/* @description : Loops to print nxn pattern of incrementing numbers.. 0-n forming an nxn grid
-/* @param       : Integer<input>, 'input' represents the n value in nxn grid.
+/* @description : Prints a pyramid pattern of decreasing digits, in sequential digits of input n.
+/* @param       : Integer<input>
 /* @return      : None, void
-/* @complexity  : 0(n^2)
-/* @explanation : A straight forward 0(n^2) approach to print the numbers in an nxn grid.
-/*  			  since the digits value represent the line number, we print the outer-loop value
-/*                'i' in this case over 'input' times, which is iterated and taken care of by the
-/*                inner loop 'j' in this case.
+/* @complexity  : O(n)
+/* @explanation : Algorithm that prints the digits in the form of an incremental pyramid. Similar to 
+/*				  "03_PatternChallenge". Outer loop loops 'input' number of times. Inner loop iterates
+/*                'i' times giving us a pyramid in the end. Problem here is that, this challenge demands
+/*                the pyramid to be 'centered', call it a 'centered pyramid' if you will. To tackle this,
+/*                we push the digits to the right by adding white spaces (" "). So we need another loop inside
+/*                the outer loop based on it to push the digits by, say, 'input-i' times in every loop.
+/*                This pushes the digits or the pyramind by those many times helping us to 'center' it. 
 /* @author      : Pranay Kothapalli @kotAPI
 /**********************************************************/
-void printPattern_02(int input){
-	for(int i=0;i<input;i++){
-		for(int j=0;j<input;j++){
-			cout<<i<<" ";
+void printPattern_06(int input){
+	// Outer loop loops input number of times
+	for(int i=1;i<=input;i++){
+		
+		// Loop to print whitespaces, to 'push' the pyramid so it is 'centered'.
+		for(int j=0;j<input-i;j++){
+			cout<<" ";
 		}
-		// Newline on end of inner loop to start printing on a fresh line.
+
+		// Iterate 'k' times with every 'i' iteration to print the stars 'i' times.
+		for(int k=0;k<i;k++){
+			cout<<"*"<<" ";
+		}
+		// Jump to newline when the inner loop has finished executing.
 		cout<<endl;
 	}
 }

@@ -34,7 +34,7 @@ int main(){
 }
 
 /**********************************************************
-/*                <some_function_name>
+/*                <printPattern_04>
 /*
 /* @description : Prints a pyramid pattern of decreasing digits, in sequential digits of input n.
 /* @param       : Integer<input>
