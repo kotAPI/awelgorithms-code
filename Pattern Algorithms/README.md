@@ -86,18 +86,6 @@
 
 ### 08_PatternChallenge
 
-	0 1 2  3 4 5  6  7  8  9
-	0 2 4  6 8 10 12 14 16 18
-	0 3 6  9 12 15 18 21 24 27
-	0 4 8  10
-	0 5 10 
-	0 6 12
-	0 7 14
-	0 8 16
-	0 9 18 27 36 45 54 63 72 81
-
-### 09_PatternChallenge
-
 	                1
 	              1 2 1
 	            1 2 3 2 1
@@ -108,7 +96,7 @@
 	  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
 	1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
 
-### 10_PatternChallenge
+### 09_PatternChallenge
 
 	1 
 	1 2 
@@ -120,7 +108,7 @@
 	1 2
 	1
 	
-### 11_PatternChallenge
+### 10_PatternChallenge
 
 	1 2 3 4 5 6 7 8 9
 	  1 2 3 4 5 6 7 
@@ -128,7 +116,7 @@
 	      1 2 3 
 	        1
 
-### 12_PatternChallenge
+### 11_PatternChallenge
 
 	        1
 	      1 2
@@ -140,7 +128,7 @@
 	      1 2
 	        1
 
-### 13_PatternChallenge
+### 12_PatternChallenge
 
 	
 	                1
@@ -153,7 +141,7 @@
 	  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
 	1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
 
-### 14_PatternChallenge
+### 13_PatternChallenge
 
 	
 	                1
@@ -175,7 +163,7 @@
 	                1 2
 	                  1
 
-### 15_PatternChallenge
+### 14_PatternChallenge
 
 
 	
@@ -198,21 +186,21 @@
 	                1 2 1
 	                  1
 
+### 15_PatternChallenge
+
+	1 2 3 4 5 5 4 3 2 1
+	1 2 3 4 4 3 2 1
+	1 2 3 3 2 1
+	1 2 2 1
+	1 1
+	1 1
+	1 2 2 1
+	1 2 3 3 2 1
+	1 2 3 4 4 3 2 1
+	1 2 3 4 5 5 4 3 2 1
+
+
 ### 16_PatternChallenge
-
-	1 2 3 4 5 5 4 3 2 1
-	1 2 3 4 4 3 2 1
-	1 2 3 3 2 1
-	1 2 2 1
-	1 1
-	1 1
-	1 2 2 1
-	1 2 3 3 2 1
-	1 2 3 4 4 3 2 1
-	1 2 3 4 5 5 4 3 2 1
-
-
-### 17_PatternChallenge
 
 	p
 	pr
@@ -228,7 +216,7 @@
 	pr
 	p
 
-### 18_PatternChallenge
+### 17_PatternChallenge
 (Chessboard with varying width and height)
 
 	# # # #
@@ -241,7 +229,7 @@
 	 # # # #
 
 
-### 19_PatternChallenge
+### 18_PatternChallenge
 
     * * * * * * * * * *
     *
