@@ -36,7 +36,7 @@ int main(){
 /**********************************************************
 /*                <printPattern_06>
 /*
-/* @description : Prints a pyramid pattern of decreasing digits, in sequential digits of input n.
+/* @description : Prints a pyramid pattern of stars as a centered pyramid.
 /* @param       : Integer<input>
 /* @return      : None, void
 /* @complexity  : O(n)
