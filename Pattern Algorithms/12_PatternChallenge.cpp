@@ -48,7 +48,7 @@ int main(){
 /* @author      : Pranay Kothapalli @kotAPI
 /**********************************************************/
 void printPattern_12(int input){
-	// Outer loop loops input number of times
+	
 	int mid;
 	// Check if the user input is even or odd, choose a valid mid point depending on the input
 	if(input%2==0){
@@ -59,7 +59,7 @@ void printPattern_12(int input){
 		// Mid/2+1 if the input is odd. (if input is 9, mid is 5, 9/2+1 = 5).
 		mid = input/2 +1;
 	}
-
+	// Outer loop loops input number of times
 	for(int i=1;i<input;i++){
 		// if i hasn't reached the mid point of the pyramid
 		// execute this block
