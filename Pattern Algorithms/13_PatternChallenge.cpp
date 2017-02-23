@@ -11,7 +11,7 @@
 /******************************************************************************************************/
 
 /***********************************
-/* 12_PatternChallenge
+/* 13_PatternChallenge
 /***********************************/
 
 // Library imports
@@ -19,7 +19,7 @@
 using namespace std;
 
 //Prototypes for the algorithms
-void printPattern_12(int);
+void printPattern_13(int);
 
 int main(){
 	// user input
@@ -28,12 +28,12 @@ int main(){
 	cout<<"Enter number of lines."<<endl;
 	cin>>userInput;
 
-	printPattern_12(userInput);
+	printPattern_13(userInput);
 	return 0;
 }
 
 /**********************************************************
-/*                <printPattern_12>
+/*                <printPattern_13>
 /*
 /* @description : Prints a pyramid pattern in increasing and then in a decreasing way after reaching the mid point.
 /* @param       : Integer<input>
@@ -49,7 +49,7 @@ int main(){
 /*                a rhombus like figure in the end. 
 /* @author      : Pranay Kothapalli @kotAPI
 /**********************************************************/
-void printPattern_12(int input){
+void printPattern_13(int input){
 	// Outer loop loops input number of times
 	int mid;
 	// Check if the user input is even or odd, choose a valid mid point depending on the input
