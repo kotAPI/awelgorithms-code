@@ -63,7 +63,6 @@ void printPattern_10(int input){
 			// Newline to print when inner loops are done executing
 			cout<<endl;
 		}		
-		// Jump to newline when the inner loops have finished executing.
 		
 	}
 }
