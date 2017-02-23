@@ -66,3 +66,35 @@ void printPattern_06(int input){
 		cout<<endl;
 	}
 }
+
+//TODO
+/**********************************************************
+/*                <some_function_name>
+/*
+/* @description : description here
+/* @param       : Integer<variable> (Datatype<variable_name>)
+/* @return      : datatype (int,float,double etc)
+/* @complexity  : Big O notation. (O(n),O(n^2) etc)
+/* @explanation : Detailed description about what the algorithm does
+/* @author      : <Your name> @<GitHub handle> (John Doe @johndoe)
+/**********************************************************/
+/*void print_pattern_alt_method(int num){
+	// Algorithm content goes here.
+	int maxDots = (2*num + 1) - 1;
+	for(int i = 0; i < num; i++)
+	{
+		int hdots = 2*i - 1;
+		for(int j = 0 ; j < maxDots ; j++)
+		{
+			if((num - i) < j && j < (num + i))
+			{
+				cout << "*";
+			}
+			else
+			{
+				cout << " ";
+			}			
+		}
+		cout << endl;
+	}	
+}*/
