@@ -34,7 +34,7 @@ int main(){
 /*                <printPattern_15>
 /*
 /* @description : print a string pyramid, incremental first, then decremental after reaching the mid point
-/* @param       : Integer<input>
+/* @param       : character string<input>
 /* @return      : None, void
 /* @complexity  : O(n)
 /* @explanation : We iterate twice the length of string, once the loop reaches mid point(length of the string).
