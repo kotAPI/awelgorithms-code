@@ -23,7 +23,7 @@ using namespace std;
 void printPattern_15(char*);
 
 int main(){
-	// input string
+	// input str
 	char str[]= "program";
 
 	printPattern_15(str);
@@ -67,10 +67,4 @@ void printPattern_15(char* input){
 		cout<<endl;
 				
 	}
-		
-
-	
-	
-	
-	
 }
