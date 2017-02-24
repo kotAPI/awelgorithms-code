@@ -23,7 +23,7 @@ using namespace std;
 void printPattern_15(char*);
 
 int main(){
-	// user input
+	// input string
 	char str[]= "program";
 
 	printPattern_15(str);
