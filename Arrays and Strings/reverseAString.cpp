@@ -16,7 +16,6 @@
 
 // Library imports
 #include <iostream>
-#include <stdio.h>
 #include <cstring> // Import cstring for string operations
 using namespace std;
 
