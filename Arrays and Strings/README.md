@@ -1,58 +1,68 @@
 # Arrays and Strings
 
-#### 1. [Return minimum Element In an Array (minimumElementInAnArray)](minimumElementInAnArray.cpp)
+#### 1. [Return minimum Element In an Array (minimumElementInAnArray)](C++/minimumElementInAnArray.cpp)
 
 > Write an algorithm that accepts an array of `'n'` length , finds the minimum element in it and returns it.  
 
-#### 2. [Reverse a String (reverseAString)](reverseAString.cpp)
+#### 2. [Reverse a String (reverseAString)](C++/reverseAString.cpp)
 
 > Write an function that takes in a string, reverses it and returns it.
 
 
-#### 3. [Reverse an Array (reverseAnArray)](reverseAnArray.cpp)
+#### 3. [Reverse an Array (reverseAnArray)](C++/reverseAnArray.cpp)
 
 > Write an function that takes in an array, reverses it and returns it(or its pointer).
 
-#### 3. [Pair of Numbers add up to another in an array (findPairofNumbersToAddUpToAnother)](findPairofNumbersToAddUpToAnother.cpp)
+#### 4. [Pair of Numbers add up to another in an array (findPairofNumbersToAddUpToAnother)](C++/findPairofNumbersToAddUpToAnother.cpp)
 
 > Check for a pair of numbers in a given number array A[] with the sum 'x'
 >       Test Case => [2,4,5,7,1,3] - x =12 (5,7 are the pair with sum 12)
 
 
-#### 4. [Find most occuring number in an Array (mostOccuringNumber)](mostOccuringNumber.cpp)
+#### 5. [Find most occuring number in an Array (mostOccuringNumber)](C++/mostOccuringNumber.cpp)
 
 > Find out the number that appears most number of times
 >       Test Case => [2,2,2,2,1,4,2,2,2,63,1,1,1,1,15,72,4,3,2,6,7,1,3] 
 
-#### 5. [Find a number that occurs odd number of times (arrayNumberOccuringOddTimes)](arrayNumberOccuringOddTimes.cpp)
+#### 6. [Find a number that occurs odd number of times (arrayNumberOccuringOddTimes)](C++/arrayNumberOccuringOddTimes.cpp)
 
 > Find out the number that appears odd number of times.
 >       Test Case => [2,2,2,2,2,1,1,1,1,2,3,4,3,4,6,7,6,7,8,9,8,9] 
 
-#### 6. [Rotate an array 'd' number of times (rotateAnArray)](rotateAnArray.cpp)
+#### 7. [Rotate an array 'd' number of times (rotateAnArray)](C++/rotateAnArray.cpp)
 
 > Given an array, with an argument 'd'. Rotate it by d number of times. 
 >           A = [1,2,3,4,5], d = 3, RotatedArray = [4,5,1,2,3]
 >           Test Case => [1,2,3,4,5,6,7,8,9,10,11,12,13] 
 
-#### 7. [Maximum sum in an Array such that no two elements are adjacent(maxNonAdjacentSum)](maxNonAdjacentSum.cpp)
+#### 8. [Maximum sum in an Array such that no two elements are adjacent(maxNonAdjacentSum)](C++/maxNonAdjacentSum.cpp)
 
 > Find out the number that's maximum sum in an Array such that no two elements are adjacent
 >       Test Case => [33,2,1,64,23,75,3,7,8,78,3,65]; 
 
+#### 9. [Print all the LEADERS in the array(C++/leadersInAnArray)](leadersInAnArray.cpp)
+
+> An element is leader if it is greater than all the elements to its right side. And the rightmost element is always a leader. 
+>       Test Case => [16, 17, 4, 3, 5, 2]; 
+>       Leaders   => 17, 5 and 2.
+
+
+#### 10. [Segregate 0s and 1s in an array (segregate01))](C++/segregate01.cpp)
+
+> Given an array of just random 0s and 1s, segregate the 0s on the left and 1s on the right
+> 
+>       Test Case => [0,1,1,1,0,0,0,0,1,1,1,1,1,0,1,0,1,0,0,1,1,1,0,1,0,1,0,0,1]; 
+.       
+
+
+
+
+
 
 TODO :
 
-
-
-* Maximum sum such that no two elements are adjacent
-Given an array of positive numbers, find the maximum sum of a subsequence with the constraint that no 2 numbers in the sequence should be adjacent in the array. So 3 2 7 10 should return 13 (sum of 3 and 10) or 3 2 5 10 7 should return 15 (sum of 3, 5 and 7).Answer the question in most efficient way.
-
-* Write a program to print all the LEADERS in the array. An element is leader if it is greater than all the elements to its right side. And the rightmost element is always a leader. For example int the array {16, 17, 4, 3, 5, 2}, leaders are 17, 5 and 2.
-
 * You are given an array of 0s and 1s in random order. Segregate 0s on left side and 1s on right side of the array. Traverse array only once.
 
-* Write a program to print all the LEADERS in the array. An element is leader if it is greater than all the elements to its right side. And the rightmost element is always a leader. For example int the array {16, 17, 4, 3, 5, 2}, leaders are 17, 5 and 2.
 
 * Given an array arr[] of integers, find out the difference between any two elements such that larger element appears after the smaller number in arr[].
 
