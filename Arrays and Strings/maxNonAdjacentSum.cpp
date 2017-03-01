@@ -11,7 +11,7 @@
 /******************************************************************************************************/
 
 /************************************************
-/* Rotate an array 'd' number of times
+/* Maximum sum in an Array such that no two elements are adjacent
 /************************************************/
 
 // Library imports
@@ -19,24 +19,15 @@
 using namespace std;
 
 //Prototypes for the algorithms
-int rotateAnArray(int* arr,int len, int d);
+int maxNonAdjacentSum(int* arr,int len);
 
 int main(){
 	// Lines to handle user input go here, be descriptive...
 	// use cin, cout 
-	int arr[] = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+	int arr[] = {93,2,1,64,23,65,3,7,8,78,3,85};
 	int arrayLength = sizeof(arr)/sizeof(arr[0]);
-
-	int difference = 3;
-	cout<<"How many times do you want to rotate an Array by? has to be less than "<<arrayLength;
-	cin>>difference;
-	if(difference>=arrayLength){
-		
-		difference = difference % arrayLength;
-	}
 	// Call your algorithms here
-	
-	rotateAnArray(arr, arrayLength,difference);
+	maxNonAdjacentSum(arr, arrayLength);
 	
 	
 
@@ -44,7 +35,7 @@ int main(){
 }
 
 /**********************************************************
-/*                <rotateAnArray>
+/*                <maxNonAdjacentSum>
 /*
 /* @description : description here
 /* @param       : Integer<variable> (Datatype<variable_name>)
@@ -53,25 +44,31 @@ int main(){
 /* @explanation : Detailed description about what the algorithm does
 /* @author      : <Your name> @<GitHub handle> (John Doe @johndoe)
 /**********************************************************/
-int rotateAnArray(int* arr,int len, int d){
+int maxNonAdjacentSum(int* arr,int len){
 	// Algorithm content goes here.	
-	int tempArr[d];
+	int maxSum=0;
+	int numA=0;
+	int numB=0;
 
-	for(int i=0;i<d;i++){
-		tempArr[i] = arr[i];		
+	for(int i=0;i<len-2;i++){
+		for(int j=i+2;j<len;j++){
+
+			if(arr[i]+arr[j]>=maxSum){
+				
+				
+				numA = arr[i];
+				numB = arr[j];
+				maxSum = numA+numB;
+
+				// Max sum and numbers that contribute to it.
+				cout<<maxSum<<" "<<numA<<" "<<numB<< endl;
+			}
+
+		}
 	}
 
-	for(int i=0;i<len-d;i++){
-		arr[i] = arr[i+d];
-	}
+	cout<<maxSum;
 
-	for(int i=0;i<d;i++){
-		arr[len-d+i] = tempArr[i];
-	}
+	return maxSum;
 
-	for(int i=0;i<len;i++){
-		cout<<arr[i]<<" ";
-	}
-
-	return *arr;
 }

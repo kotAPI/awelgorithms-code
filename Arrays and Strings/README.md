@@ -29,16 +29,21 @@
 > Find out the number that appears odd number of times.
 >       Test Case => [2,2,2,2,2,1,1,1,1,2,3,4,3,4,6,7,6,7,8,9,8,9] 
 
-#### 5. [Rotate an array 'd' number of times (rotateAnArray)](rotateAnArray.cpp)
+#### 6. [Rotate an array 'd' number of times (rotateAnArray)](rotateAnArray.cpp)
 
 > Given an array, with an argument 'd'. Rotate it by d number of times. 
 >           A = [1,2,3,4,5], d = 3, RotatedArray = [4,5,1,2,3]
 >           Test Case => [1,2,3,4,5,6,7,8,9,10,11,12,13] 
 
+#### 7. [Maximum sum in an Array such that no two elements are adjacent(maxNonAdjacentSum)](maxNonAdjacentSum.cpp)
+
+> Find out the number that's maximum sum in an Array such that no two elements are adjacent
+>       Test Case => [33,2,1,64,23,75,3,7,8,78,3,65]; 
+
 
 TODO :
 
-* An algorithm, rotate(A[n], d). Rotate an array A[n] by d times.
+
 
 * Maximum sum such that no two elements are adjacent
 Given an array of positive numbers, find the maximum sum of a subsequence with the constraint that no 2 numbers in the sequence should be adjacent in the array. So 3 2 7 10 should return 13 (sum of 3 and 10) or 3 2 5 10 7 should return 15 (sum of 3, 5 and 7).Answer the question in most efficient way.

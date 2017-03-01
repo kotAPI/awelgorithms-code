@@ -11,7 +11,7 @@
 /******************************************************************************************************/
 
 /************************************************
-/* Rotate an array 'd' number of times
+/* Print all the LEADERS in the array
 /************************************************/
 
 // Library imports
@@ -19,24 +19,15 @@
 using namespace std;
 
 //Prototypes for the algorithms
-int rotateAnArray(int* arr,int len, int d);
+int leadersInAnArray(int* arr,int len);
 
 int main(){
 	// Lines to handle user input go here, be descriptive...
 	// use cin, cout 
-	int arr[] = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+	int arr[] = {16, 17, 4, 3, 5, 2};
 	int arrayLength = sizeof(arr)/sizeof(arr[0]);
-
-	int difference = 3;
-	cout<<"How many times do you want to rotate an Array by? has to be less than "<<arrayLength;
-	cin>>difference;
-	if(difference>=arrayLength){
-		
-		difference = difference % arrayLength;
-	}
 	// Call your algorithms here
-	
-	rotateAnArray(arr, arrayLength,difference);
+	leadersInAnArray(arr, arrayLength);
 	
 	
 
@@ -44,7 +35,7 @@ int main(){
 }
 
 /**********************************************************
-/*                <rotateAnArray>
+/*                <leadersInAnArray>
 /*
 /* @description : description here
 /* @param       : Integer<variable> (Datatype<variable_name>)
@@ -53,25 +44,29 @@ int main(){
 /* @explanation : Detailed description about what the algorithm does
 /* @author      : <Your name> @<GitHub handle> (John Doe @johndoe)
 /**********************************************************/
-int rotateAnArray(int* arr,int len, int d){
-	// Algorithm content goes here.	
-	int tempArr[d];
-
-	for(int i=0;i<d;i++){
-		tempArr[i] = arr[i];		
+int leadersInAnArray(int* arr,int len){
+	// Algorithm content goes here.
+	if(len ==0){
+		return 0;
 	}
+	
+	int great = 0;
 
-	for(int i=0;i<len-d;i++){
-		arr[i] = arr[i+d];
+	for(int i=0; i<len-1; i++){
+		for(int j=i+1; j<len; j++){
+			if(arr[i] < arr[j]){
+				great = 0;
+				break;
+			}
+			great = 1;
+		}
+
+		if(great){
+			cout<<arr[i]<< " ";
+			great = 0;
+		}
+		
 	}
-
-	for(int i=0;i<d;i++){
-		arr[len-d+i] = tempArr[i];
-	}
-
-	for(int i=0;i<len;i++){
-		cout<<arr[i]<<" ";
-	}
-
-	return *arr;
+	cout<< arr[len-1];
+	 return  1;
 }
