@@ -20,15 +20,20 @@ using namespace std;
 
 //Prototypes for the algorithms
 int segregate01(int* arr,int len);
+int segregate01_optimized(int *arr, int len);
 
 int main(){
 	// Lines to handle user input go here, be descriptive...
 	// use cin, cout 
 	int arr[] = {0,1,1,1,0,0,0,0,1,1,1,1,1,0,1,0,1,0,0,1,1,1,0,1,0,1,0,0,1};
+	int arr2[] = {1,1,1,1,0,0,0};
 	
 	int arrayLength = sizeof(arr)/sizeof(arr[0]);
+
+	int arrayLength2 = sizeof(arr2)/sizeof(arr2[0]);
 	// Call your algorithms here
-	segregate01(arr, arrayLength);
+	//segregate01(arr, arrayLength);
+	segregate01_optimized(arr2,arrayLength2);
 	
 	
 
@@ -70,4 +75,41 @@ int segregate01(int* arr,int len){
 	}
 
 	return *arr;
+}
+
+
+
+
+/**********************************************************
+/*                <segregate01_optimized>
+/*
+/* @description : description here
+/* @param       : Integer<variable> (Datatype<variable_name>)
+/* @return      : datatype (int,float,double etc)
+/* @complexity  : Big O notation. (O(n),O(n^2) etc)
+/* @explanation : Detailed description about what the algorithm does
+/* @author      : <Your name> @<GitHub handle> (John Doe @johndoe)
+/**********************************************************/
+int segregate01_optimized(int *arr, int len){
+	int min = 0;
+	int max = len-1;
+
+	while(min<max){
+		if(arr[min]==0){
+			min++;
+		}
+		if(arr[max]==1){
+			max--;
+		}
+		if(arr[min]>arr[max]){
+			int t= arr[min];
+			arr[min] = arr[max];
+			arr[max] = t;
+		}
+		
+	}
+
+	for(int i=0;i<len;i++){
+		cout<<arr[i];
+	}
 }
