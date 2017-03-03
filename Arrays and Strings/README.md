@@ -53,25 +53,26 @@
 > 
 >       Test Case => [0,1,1,1,0,0,0,0,1,1,1,1,1,0,1,0,1,0,0,1,1,1,0,1,0,1,0,0,1]; 
 .       
+#### 11. [Segregate 0s and 1s in an array (productArrayPuzzle))](C++/productArrayPuzzle.cpp)
+
+> Given an array arr[] of n integers, construct a Product Array prod[] (of same size) such that prod[i] is equal to the product of all the elements of arr[] except arr[i]. Solve it without division operator and in O(n).
+> 
+>      arr[] = {10, 3, 5, 6, 2}
+       prod[] = {180, 600, 360, 300, 900} 
 
 
-
-
+#### 11. [Given two sorted arrays, find their union and intersection (unionAndIntersection))](C++/unionAndIntersection.cpp)
+ 
+       arr1[] = {1, 3, 4, 5, 7}
+       arr2[] = {2, 3, 5, 6}
+       
+       Union[] = {1, 2, 3, 4, 5, 6, 7}
+       Intersection= {3,5}
 
 
 TODO :
 
-* You are given an array of 0s and 1s in random order. Segregate 0s on left side and 1s on right side of the array. Traverse array only once.
 
-
-* Given an array arr[] of integers, find out the difference between any two elements such that larger element appears after the smaller number in arr[].
-
-    * A Product Array Puzzle
-    Given an array arr[] of n integers, construct a Product Array prod[] (of same size) such that prod[i] is equal to the product of all the elements of arr[] except arr[i]. Solve it without division operator and in O(n).
-
-    Example:
-    arr[] = {10, 3, 5, 6, 2}
-    prod[] = {180, 600, 360, 300, 900}
 
 * Given two sorted arrays, find their union and intersection.
 

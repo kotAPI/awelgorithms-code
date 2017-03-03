@@ -20,6 +20,7 @@ using namespace std;
 
 //Prototypes for the algorithms
 void printPattern_10(int);
+void print_pattern10_method2(int);
 
 int main(){
 	// user input
@@ -64,5 +65,46 @@ void printPattern_10(int input){
 			cout<<endl;
 		}		
 		
+	}
+}
+
+
+/**********************************************************
+/*                <print_pattern10_method2>
+/*
+/* @description : Prints an inverse pyramid pattern of digits in increasing order terminating at an odd number depending
+/*                on the user-input value.
+/* @param       : Integer<input>
+/* @return      : None, void
+/* @complexity  : O(n)
+/* @explanation : Algorithm not very much different from print_pattern10 method, except, this uses while loops.
+/*                We use the outer loop to increment up to 'num. number of times. MaxNumInLine maintains the max num that 
+/*                needs to be printed for each line, which gets decremented by 2 in each iteration.Loop counter maintains the 
+/*                count of the lines covered. Each line has 'loopCounter' no. of spaces in the beginning.
+/*                'horCounter' tracls count of each element, and prints until the 'maxNumInLine'.
+/* @author      : Ravi Kanth Kaja
+/**********************************************************/
+void print_pattern10_method2(int num){
+	// Algorithm content goes here.
+	int maxNumInLine = num;
+	int loopCounter = 0;
+	while(maxNumInLine > 0)
+	{
+		int horCounter = 1;
+		while(horCounter < maxNumInLine + loopCounter + 1)
+		{
+			if(horCounter <= loopCounter)
+			{
+				cout << " ";
+			}
+			else
+			{
+				cout << horCounter - loopCounter;
+			}
+			horCounter++;
+		}
+		cout << endl;
+		loopCounter++;;
+		maxNumInLine = maxNumInLine - 2;
 	}
 }

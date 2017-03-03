@@ -20,6 +20,7 @@ using namespace std;
 
 //Prototypes for the algorithms
 void printPattern_08(int);
+void printPattern_08_method2(int);
 
 int main(){
 	// user input
@@ -67,3 +68,39 @@ void printPattern_08(int input){
 		cout<<endl;
 	}
 }
+
+
+/**********************************************************
+/*                <printPattern_08_method2>
+/*
+/* @description : Prints a pyramid pattern of stars as a centered pyramid.
+/* @param       : Integer<input>
+/* @return      : None, void
+/* @complexity  : O(n)
+/* @explanation : Algorithm knows the range of indexes where it has to print, and prints spaces everywhere else.
+/*                For each line,it starts with 1 and prints until it reaches the middle of the index and then goes in decreasing order.
+/* @author      : Ravi Kanth Kaja
+/**********************************************************/
+void printPattern_08_method2(int num){
+	// Algorithm content goes here.
+	int maxDots = (2*num + 1) - 1;
+	for(int i = 0; i < num; i++)
+	{
+		for(int j = 0 ; j < maxDots ; j++)
+		{
+			if(j <= num && j > (num -i))
+			{
+				cout << (j - num) + i;
+				continue;
+			}
+			if(j > num && j < (num + i))
+			{
+				cout << (num -j) + i;
+				continue;
+			}
+			cout << " ";
+		}
+		cout << endl;
+	}	
+}
+
