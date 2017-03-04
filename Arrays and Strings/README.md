@@ -70,6 +70,18 @@
        Intersection= {3,5}
 
 
+#### 12. [Find two repeating elements in an Array (repeatingElementsInArray))](C++/repeatingElementsInArray.cpp)
+ 
+     Find the two repeating elements in a given array
+    You are given an array of n+2 elements. All elements of the array are in range 1 to n. And all elements occur once except two numbers which occur twice. Find the two repeating numbers.
+           A= {4, 2, 4, 5, 2, 3, 1} and n = 5
+
+       The above array has n + 2 = 7 elements with all elements occurring once except 2 and 4 which occur twice. So the output should be 4 2.
+
+
+
+
+
 TODO :
 
 
@@ -81,12 +93,8 @@ Input  = {12, 34, 45, 9, 8, 90, 3}
 Output = {12, 34, 8, 90, 45, 9, 3} 
 
 
-* Find the two repeating elements in a given array
-You are given an array of n+2 elements. All elements of the array are in range 1 to n. And all elements occur once except two numbers which occur twice. Find the two repeating numbers.
 
-For example, array = {4, 2, 4, 5, 2, 3, 1} and n = 5
 
-The above array has n + 2 = 7 elements with all elements occurring once except 2 and 4 which occur twice. So the output should be 4 2.
 
 * Equilibrium index of an array
 Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. For example, in an arrya A:
