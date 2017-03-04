@@ -78,8 +78,20 @@
 
        The above array has n + 2 = 7 elements with all elements occurring once except 2 and 4 which occur twice. So the output should be 4 2.
 
+#### 13. [Find the Equilibrium index in an array (equilibriumIndexInArray))](C++/equilibriumIndexInArray.cpp)
+
+     Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. 
+       A[] = {-7,1,5,2,-4,3,0}
+       3 is an equilibrium index, because:
+       A[0] + A[1] + A[2] = A[4] + A[5] + A[6]
 
 
+#### 13. [Check if array elements are consecutive (consecutiveCheckArray))](C++/consecutiveCheckArray.cpp)
+
+     Given an unsorted array of numbers, write a function that returns true if array consists of consecutive numbers 
+     a) If array is {5, 2, 3, 1, 4}, then the function should return true because the array has consecutive numbers from 1 to 5.
+    b) If array is {83, 78, 80, 81, 79, 82}, then the function should return true because the array has consecutive numbers from 78 to 83.
+    c) If the array is {34, 23, 52, 12, 3 }, then the function should return false because the elements are not consecutive.
 
 
 TODO :
@@ -95,24 +107,6 @@ Output = {12, 34, 8, 90, 45, 9, 3}
 
 
 
-
-* Equilibrium index of an array
-Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. For example, in an arrya A:
-
-A[0] = -7, A[1] = 1, A[2] = 5, A[3] = 2, A[4] = -4, A[5] = 3, A[6]=0
-
-3 is an equilibrium index, because:
-A[0] + A[1] + A[2] = A[4] + A[5] + A[6]
-
-* Check if array elements are consecutive | Added Method 3
-Given an unsorted array of numbers, write a function that returns true if array consists of consecutive numbers.
-
-Examples:
-a) If array is {5, 2, 3, 1, 4}, then the function should return true because the array has consecutive numbers from 1 to 5.
-
-b) If array is {83, 78, 80, 81, 79, 82}, then the function should return true because the array has consecutive numbers from 78 to 83.
-
-c) If the array is {34, 23, 52, 12, 3 }, then the function should return false because the elements are not consecutive.
 
 
 * Find the smallest missing number
