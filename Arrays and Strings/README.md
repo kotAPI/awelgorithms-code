@@ -65,21 +65,13 @@
  
        arr1[] = {1, 3, 4, 5, 7}
        arr2[] = {2, 3, 5, 6}
-       
+
        Union[] = {1, 2, 3, 4, 5, 6, 7}
        Intersection= {3,5}
 
 
 TODO :
 
-
-
-* Given two sorted arrays, find their union and intersection.
-
-For example, if the input arrays are: 
-arr1[] = {1, 3, 4, 5, 7}
-arr2[] = {2, 3, 5, 6}
-Then your program should print Union as {1, 2, 3, 4, 5, 6, 7} and Intersection as {3, 5}. 
 
 * Given an array A[], write a function that segregates even and odd numbers. The functions should put all even numbers first, and then odd numbers.
 
