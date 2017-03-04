@@ -86,12 +86,13 @@
        A[0] + A[1] + A[2] = A[4] + A[5] + A[6]
 
 
-#### 13. [Check if array elements are consecutive (consecutiveCheckArray))](C++/consecutiveCheckArray.cpp)
+#### 14. [Check if array elements are consecutive (consecutiveCheckArray))](C++/consecutiveCheckArray.cpp)
 
-     Given an unsorted array of numbers, write a function that returns true if array consists of consecutive numbers 
-     a) If array is {5, 2, 3, 1, 4}, then the function should return true because the array has consecutive numbers from 1 to 5.
-    b) If array is {83, 78, 80, 81, 79, 82}, then the function should return true because the array has consecutive numbers from 78 to 83.
-    c) If the array is {34, 23, 52, 12, 3 }, then the function should return false because the elements are not consecutive.
+    Given an unsorted array, write an algorithm to check if the given array has consecutive elements or not, must return true if it does, false if it doesn't.
+
+    A ={5, 2, 3, 1, 4}, must return true.
+    A ={83, 78, 80, 81, 79, 82}, must return true
+    A ={34, 23, 52, 12, 3 } must return false;
 
 
 TODO :
