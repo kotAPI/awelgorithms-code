@@ -95,15 +95,17 @@
     A ={34, 23, 52, 12, 3 } must return false;
 
 
-TODO :
+#### 15. [Segregate an array of even and odd numbers to left and right respectively (segregateEvenOdd))](C++/segregateEvenOdd.cpp)
+
+    Given an array A[], write a function that segregates even and odd numbers. The functions should put all even numbers first, and then odd numbers.
+
+    Input  = {12, 34, 45, 9, 8, 90, 3}
+    Output = {12, 34, 8, 90, 45, 9, 3} 
 
 
-* Given an array A[], write a function that segregates even and odd numbers. The functions should put all even numbers first, and then odd numbers.
 
-Example
 
-Input  = {12, 34, 45, 9, 8, 90, 3}
-Output = {12, 34, 8, 90, 45, 9, 3} 
+
 
 
 
