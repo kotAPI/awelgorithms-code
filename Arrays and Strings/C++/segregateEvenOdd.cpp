@@ -1,4 +1,7 @@
 
+
+
+
 /*******************************************************************************************************
 /*      ___                   _                      _  _    _                      
 /*     / _ \                 | |                    (_)| |  | |                     
@@ -27,9 +30,7 @@ int main(){
 	int arr[] = {12, 34, 45, 9, 8, 90, 3,22, 31, 991, 112, 366, 424,411, 565, 566};
 	int arrayLength = sizeof(arr)/sizeof(arr[0]);
 	// Call your algorithms here
-	segregateEvenOdd(arr, arrayLength);
-	
-	
+	segregateEvenOdd(arr, arrayLength);	
 
 	return 0;
 }
@@ -60,11 +61,10 @@ int segregateEvenOdd(int* arr,int len){
 			int temp = arr[left];
 			arr[left] = arr[right];
 			arr[right] = temp;
-		}
-
-		
+		}		
 	}
 
+	//Print the numbers
 	for(int i=0;i<len;i++){
 		cout<<arr[i]<<" ";
 	}
